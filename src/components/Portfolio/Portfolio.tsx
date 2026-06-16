@@ -1,13 +1,13 @@
 import { Navbar } from "@/components/sections/Navbar";
-import { Hero } from "../sections/Hero";
-import { Experience } from "../sections/Experience";
-import { Education } from "../sections/Education";
-import { Skills } from "../sections/Skills";
-import { Projects } from "../sections/Projects";
-import { Achievements } from "../sections/Achievements";
-import { Footer } from "../sections/Footer";
-import { FloatingResume } from "../sections/FloatingResume";
-import { Contact } from "../sections/Contact";
+import { Hero } from "@/components/sections/Hero";
+import { Experience } from "@/components/sections/Experience";
+import { Education } from "@/components/sections/Education";
+import { Skills } from "@/components/sections/Skills";
+import { Projects } from "@/components/sections/Projects";
+import { Achievements } from "@/components/sections/Achievements";
+import { Footer } from "@/components/sections/Footer";
+import { FloatingResume } from "@/components/sections/FloatingResume";
+import { Contact } from "@/components/sections/Contact";
 
 const Portfolio = () => {
   return (
