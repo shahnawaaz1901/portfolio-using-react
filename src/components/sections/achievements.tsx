@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Award } from "lucide-react";
-import { Section } from "./section";
+import { Section } from "./Section";
 import { achievements } from "@/lib/portfolio-data";
 
 export function Achievements() {

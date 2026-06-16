@@ -1,5 +1,5 @@
 import "./App.css";
-import Portfolio from "./components/Portfolio/Portfolio";
+import Portfolio from "./components/portfolio/Portfolio";
 import ThemeProvider from "./context/ThemeProvider";
 
 function App() {

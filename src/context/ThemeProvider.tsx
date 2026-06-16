@@ -15,8 +15,9 @@ export default function ThemeProvider({
     root.classList.toggle("dark", theme === "dark");
     localStorage.setItem("theme", theme);
   }, [theme]);
+
   const toggleTheme = (newTheme: Theme) => setTheme(newTheme);
-  const toggle = () => setTheme((prev) => prev === "dark" ? "light" : "dark");
+  const toggle = () => setTheme((prev: Theme) => (prev === "dark" ? "light" : "dark"));
   return (
     <ThemeCtx.Provider value={{ theme, toggleTheme, toggle }}>
       {children}

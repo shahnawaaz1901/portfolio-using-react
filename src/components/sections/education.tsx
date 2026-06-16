@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { GraduationCap, Trophy, BookOpen } from "lucide-react";
-import { Section } from "./section";
-import { Badge } from "@/components/ui/badge";
+import { Section } from "./Section";
+import { Badge } from "@/components/common/Badge";
 import { education } from "@/lib/portfolio-data";
 
 export function Education() {

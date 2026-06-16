@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Code2, Server, Database, Wrench, Brain } from "lucide-react";
-import { Section } from "./section";
+import { Section } from "./Section";
 import { skillGroups } from "@/lib/portfolio-data";
 
 const icons: Record<string, typeof Code2> = {

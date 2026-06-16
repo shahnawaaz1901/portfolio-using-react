@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight, Folder, Sparkles } from "lucide-react";
-import { Section } from "./section";
-import { Badge } from "@/components/ui/badge";
+import { Section } from "./Section";
+import { Badge } from "@/components/common/Badge";
 import { projects } from "@/lib/portfolio-data";
 
 export function Projects() {

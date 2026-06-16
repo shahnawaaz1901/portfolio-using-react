@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
-import { Download, Mail, ArrowRight, Github, Linkedin, MapPin, Sparkles } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Mail, ArrowRight, Github, Linkedin, MapPin } from "lucide-react";
+import { Button } from "@/components/common/Button";
 import { profile } from "@/lib/portfolio-data";
-import profileImg from "@/assets/profile.jpg";
+import profileImg from "@/assets/Profile.jpg";
 
 export function Hero() {
   return (
@@ -16,11 +16,6 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          {/* <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-border bg-card/60 px-3 py-1 text-xs font-medium text-muted-foreground backdrop-blur">
-            <Sparkles className="size-3.5 text-primary" />
-            Available for new opportunities
-          </div> */}
-
           <h1 className="font-display text-4xl font-bold leading-tight tracking-tight sm:text-5xl md:text-6xl">
             Hi, I'm <span className="gradient-text">{profile.name} {" "}</span>
             {/* <br /> */}
@@ -82,7 +77,7 @@ export function Hero() {
               alt={profile.name}
               width={512}
               height={512}
-              className="size-full object-cover"
+              className="size-full"
             />
           </div>
           <div className="absolute -bottom-4 -right-4 rounded-2xl border border-border bg-card px-4 py-3 shadow-card">

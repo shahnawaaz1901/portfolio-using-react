@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Download, Eye, FileText } from "lucide-react";
-import { Section } from "./section";
-import { Button } from "@/components/ui/button";
+import { Section } from "./Section";
+import { Button } from "@/components/common/Button";
 import { profile } from "@/lib/portfolio-data";
 
 export function Resume() {

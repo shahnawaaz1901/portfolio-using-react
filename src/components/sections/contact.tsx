@@ -4,11 +4,11 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { Mail, Linkedin, Github, MapPin, Send, CheckCircle2, AlertCircle } from "lucide-react";
-import { Section } from "./section";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Label } from "@/components/ui/label";
+import { Section } from "./Section";
+import { Button } from "@/components/common/Button";
+import { Input } from "@/components/common/Input";
+import { Textarea } from "@/components/common/Textarea";
+import { Label } from "@/components/common/Label";
 import { profile } from "@/lib/portfolio-data";
 
 const schema = z.object({
