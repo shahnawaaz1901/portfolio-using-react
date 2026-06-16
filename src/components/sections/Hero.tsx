@@ -6,7 +6,7 @@ import profileImg from "@/assets/Profile.jpg";
 
 export function Hero() {
   return (
-    <section id="home" className="relative overflow-hidden pt-20 md:pt-24 sm:pt-20">
+    <section id="home" className="relative overflow-hidden pt-20 md:pt-24 sm:pt-20 scroll-mt-20 md:scroll-mt-24">
       <div className="absolute inset-0 -z-10 glow-radial" />
       <div className="absolute inset-x-0 top-0 -z-10 h-[500px] opacity-50 [background:radial-gradient(circle_at_top,oklch(0.7_0.18_262/0.15),transparent_60%)]" />
 

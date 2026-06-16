@@ -24,6 +24,18 @@ export function Navbar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    setOpen(false);
+    // Small delay to allow menu to close before scrolling
+    setTimeout(() => {
+      const element = document.querySelector(href);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }, 100);
+  };
+
   return (
     <motion.header
       initial={{ y: -30, opacity: 0 }}
@@ -49,6 +61,7 @@ export function Navbar() {
             <li key={l.href}>
               <a
                 href={l.href}
+                onClick={(e) => handleNavClick(e, l.href)}
                 className="rounded-md px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-accent hover:text-foreground"
               >
                 {l.label}
@@ -87,7 +100,7 @@ export function Navbar() {
                 <li key={l.href}>
                   <a
                     href={l.href}
-                    onClick={() => setOpen(false)}
+                    onClick={(e) => handleNavClick(e, l.href)}
                     className="block rounded-md px-3 py-3 text-sm font-medium text-foreground hover:bg-accent"
                   >
                     {l.label}
