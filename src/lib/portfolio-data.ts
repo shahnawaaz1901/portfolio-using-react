@@ -1,5 +1,5 @@
 import type { Achievement, Education, Experience, Project, SkillGroup } from "@/types/Portfolio";
-import resume from "@/assets/resume.pdf";
+import resumeData from "@/assets/resume.pdf";
 export const profile = {
   name: "Shahnawaaz Ansari",
   title: "Frontend Engineer · React · Next.js · TypeScript",
@@ -13,7 +13,7 @@ export const profile = {
   email: "shaan.ansari1901@gmail.com",
   linkedin: "https://linkedin.com/in/shahnawaaz1901",
   github: "https://github.com/shahnawaaz1901",
-  resumeUrl: (resume as any).url,
+  resumeUrl: resumeData,
 };
 
 export const experiences: Experience[] = [
@@ -100,15 +100,16 @@ export const skillGroups: SkillGroup[] = [
       "TypeScript",
       "React.js",
       "Next.js",
-      "Redux Toolkit",
+      "Redux & Toolkit",
       "Tailwind CSS",
+      "Bootstrap"
     ],
   },
-  { category: "Backend", items: ["Node.js", "Express.js"] },
+  { category: "Backend", items: ["Node.js", "Express.js", "Socket.io"] },
   { category: "Database", items: ["MongoDB"] },
   {
     category: "Tools",
-    items: ["Git", "GitHub", "Postman", "VS Code", "AWS EC2"],
+    items: ["Git", "GitHub", "Postman", "VS Code", "AWS EC2", "Cursor", "MongoDB Compass"],
   },
   {
     category: "Concepts",
@@ -117,11 +118,14 @@ export const skillGroups: SkillGroup[] = [
       "REST APIs",
       "RBAC",
       "Authentication",
-      "System Design Fundamentals",
       "Responsive Design",
       "Performance Optimization",
     ],
   },
+  {
+    category: "AI Tools",
+    items: ["Claude AI", "GitHub Copilot", "Lovable"],
+  }
 ];
 
 export const projects: Project[] = [

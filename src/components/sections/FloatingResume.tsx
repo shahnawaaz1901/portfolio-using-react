@@ -6,7 +6,7 @@ export function FloatingResume() {
   return (
     <motion.a
       href={profile.resumeUrl}
-      download
+      download={"Shahnawaaz_Resume.pdf"}
       initial={{ opacity: 0, scale: 0.8 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ delay: 1, type: "spring" }}

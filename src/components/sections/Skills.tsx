@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Code2, Server, Database, Wrench, Brain } from "lucide-react";
+import { Code2, Server, Database, Wrench, Brain, Cpu } from "lucide-react";
 import { Section } from "./Section";
 import { skillGroups } from "@/lib/portfolio-data";
 
@@ -9,6 +9,7 @@ const icons: Record<string, typeof Code2> = {
   Database: Database,
   Tools: Wrench,
   Concepts: Brain,
+  "AI Tools": Cpu
 };
 
 export function Skills() {
