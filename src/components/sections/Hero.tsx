@@ -7,7 +7,7 @@ import profileImg from "@/assets/Profile.jpg";
 export function Hero() {
   return (
     <section
-      id="home"
+      id="about"
       className="relative overflow-hidden pst-20 md:pt-24 sm:pt-20 scroll-mt-20 md:scroll-mt-24"
     >
       <div className="absolute inset-0 -z-10 glow-radial" />
@@ -18,7 +18,7 @@ export function Hero() {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.7, delay: 0.1 }}
-          className="relative mx-auto"
+          className="relative mx-auto mt-22 sm:mt-0"
         >
           <div className="absolute -inset-4 -z-10 rounded-full gradient-primary opacity-30 blur-3xl" />
           <div className="relative size-64 overflow-hidden rounded-3xl border border-border bg-card shadow-elegant md:size-80">

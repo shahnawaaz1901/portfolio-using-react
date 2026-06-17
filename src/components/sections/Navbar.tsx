@@ -4,8 +4,9 @@ import { Menu, X, Code2 } from "lucide-react";
 import { Button } from "@/components/common/Button";
 import { ToggleTheme } from "@/components/common/ToggleTheme";
 import { cn } from "@/lib/utils";
+import type { NavbarItemLinks } from "@/types/Navbar";
 
-const links = [
+const links: NavbarItemLinks[] = [
   { href: "#about", label: "About" },
   { href: "#experience", label: "Experience" },
   { href: "#skills", label: "Skills" },

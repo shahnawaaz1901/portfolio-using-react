@@ -14,6 +14,7 @@ export const profile = {
   linkedin: "https://linkedin.com/in/shahnawaaz1901",
   github: "https://github.com/shahnawaaz1901",
   resumeUrl: resumeData,
+  locationMapUrl: "https://maps.app.goo.gl/kHum7XwJtFWqqzRB7",
 };
 
 export const experiences: Experience[] = [

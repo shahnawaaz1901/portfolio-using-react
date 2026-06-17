@@ -46,7 +46,7 @@ export function Contact() {
     { Icon: Mail, label: "Email", value: profile.email, href: `mailto:${profile.email}` },
     { Icon: Linkedin, label: "LinkedIn", value: "shahnawaaz1901", href: profile.linkedin },
     { Icon: Github, label: "GitHub", value: "shahnawaaz1901", href: profile.github },
-    { Icon: MapPin, label: "Location", value: profile.location },
+    { Icon: MapPin, label: "Location", value: profile.location, href: profile.locationMapUrl },
   ];
 
   return (
